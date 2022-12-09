@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>WebPage</title>
+	</head>
+	<style>
+		*{
+			background-color: #4C4C4C;
+			font-family: Times New Roman;
+			font-size: 18px;
+			color: white;
+		}
+		.card{
+			height: auto;
+			width: auto;
+			padding: 10px 35px;
+			background: #191919;
+			border-radius: 40px;
+			margin: 15px;
+			position: relative;
+			overflow: hidden;
+			text-align: center;
+		}
+		span{
+			font-family: Times New Roman;
+			font-size: 28px;
+			font-weight: bold;
+			color: white;
+		}
+	</style>
+	<script>
+		function func() {
+		  const data1 = document.getElementById("id1");
+		  const data2 = document.getElementById("id2").value;
+		  const data3 = document.getElementById("id3");
+		  var w = 0;
+		  if (data1.checkValidity() && data3.checkValidity() && data2.length==2) {
+			for(let i in data2){
+				if(data2[i]!=data2[i].toUpperCase()){
+					var x = "<span>"+id1.value+id2.value+id3.value+"</span> ID's Alpha Character is not Valid!";
+					document.getElementById("rep").innerHTML = x;
+					window.alert("ID is not Valid !");
+					w+=1;
+					break;
+				}
+			}
+			if(w==0){
+				var x = "<span>"+id1.value+id2.value+id3.value+"</span> ID is Completely Valid!";
+				document.getElementById("rep").innerHTML = x;
+			}
+		  }
+		  else {
+			var x = "<span>"+id1.value+id2.value+id3.value+"</span> ID is not Valid!";
+			document.getElementById("rep").innerHTML = x;
+			window.alert("ID is not Valid !");
+		  }
+		} 
+	</script>
+	<body>
+        <div class="card">
+			<p>ID Entry</p>
+			<input id="id1" type="number" min="10" max="99" required>
+			<input id="id2" type="text" required>
+			<input id="id3" type="number" min="10" max="99" required>
+			<input type="button" onclick="func()" value="Load It!"/>
+		</div>
+		<p id="rep"></p>
+	</body>
+</html>

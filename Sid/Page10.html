@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>WebPage</title>
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<style>
+		*{
+			background-color: #4C4C4C;
+			font-family: Times New Roman;
+			font-size: 18px;
+			color: white;
+		}
+		.square {
+			height: 50px;
+			width: 50px;
+		}
+		.trapezoid {
+			border-bottom: 50px solid #555;
+			border-left: 25px solid transparent;
+			border-right: 25px solid transparent;
+			height: 0;
+			width: 125px;
+		}
+		.parallelogram {
+			width: 100px;
+			height: 50px;
+			transform: skew(20deg);
+		}
+		.triangle-down {
+			width: 0;
+			height: 0;
+			border-left: 25px solid transparent;
+			border-right: 25px solid transparent;
+			border-top: 50px solid #555;
+		}
+		.triangle-right {
+			width: 0;
+			height: 0;
+			border-top: 25px solid transparent;
+			border-left: 50px solid #555;
+			border-bottom: 25px solid transparent;
+		}
+	</style>
+	<body>
+        <h3>Enter Colour:</h3>
+		<div ng-app="" ng-init="myCol">
+			<input style="background-color:{{myCol}}" ng-model="myCol">
+			<div class="square" style="background-color:{{myCol}}"></div>
+			<div class="trapezoid" style="background-color:{{myCol}}"></div>
+			<div class="parallelogram" style="background-color:{{myCol}}"></div>
+			<div class="triangle-down" style="background-color:{{myCol}}"></div>
+			<div class="triangle-right" style="background-color:{{myCol}}"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles.css" ?>
+<clg>
+	<student>
+		<rno>06</rno>
+		<name>JANA</name>
+		<dept>CE</dept>
+		<cgpa>9.7</cgpa>
+	</student>
+	<student>
+		<rno>17</rno>
+		<name>MAHI</name>
+		<dept>IT</dept>
+		<cgpa>6.8</cgpa>
+	</student>
+	<student>
+		<rno>34</rno>
+		<name>VIRAT</name>
+		<dept>ME</dept>
+		<cgpa>7.3</cgpa>
+	</student>
+	<student>
+		<rno>22</rno>
+		<name>RAINA</name>
+		<dept>ME</dept>
+		<cgpa>9.9</cgpa>
+	</student>
+	<student>
+		<rno>04</rno>
+		<name>JADEJA</name>
+		<dept>CN</dept>
+		<cgpa>5.3</cgpa>
+	</student>
+</clg>

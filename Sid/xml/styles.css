@@ -1,0 +1,34 @@
+*{
+	font-family:Times New Roman; 
+	background-color:#4C4C4C; 
+	font-size:38px; 
+	color:white;
+	line-height: 80px;
+	}
+	
+student{
+	height: 125px;
+	width: 235px;
+	padding: 10px 35px;
+	background: #191919;
+	border-radius: 40px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+student::after{
+	content:'\a';
+	white-space: pre;
+}
+
+cgpa{
+	height: 75px;
+	width: 90px;
+	padding: 10px 35px;
+	background: #989966;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}

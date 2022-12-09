@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>WebPage</title>
+	</head>
+	<style>
+		*{
+			background-color: #4C4C4C;
+			font-family: Times New Roman;
+			font-size: 18px;
+			color: white;
+		}
+		.card{
+			height: auto;
+			width: 235px;
+			padding: 10px 35px;
+			background: #191919;
+			border-radius: 40px;
+			margin: 15px;
+			position: relative;
+			overflow: hidden;
+			text-align: center;
+		}
+	</style>
+	<script>
+		function func(){
+			var x = parseInt(document.getElementById("wow1").value);
+			var s = "";
+			for(i=1; i<=x; i++){
+				if(i%2==1){
+					s+=i+" ";
+				}
+			}
+		document.getElementById("ans").innerHTML=s;
+		}
+	</script>
+	<body>
+        <div class="card">
+			<p>Value: <input id="wow1"></p>
+			<input type="button" onclick="func()" value="Do It!"/>
+		</div>
+		<p id="ans"></p>
+	</body>
+</html>
